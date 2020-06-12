@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,8 +12,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
-        body: Container(),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Container(
+            color: Colors.white,
+            height: 100.0,
+            width: 100.0,
+            margin: EdgeInsets.only(left: 30.0),
+            padding: EdgeInsets.all(30.0),
+            child: Text('Hello'),
+          ),
+        ),
       ),
     );
   }
